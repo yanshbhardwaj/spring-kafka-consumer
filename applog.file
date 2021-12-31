@@ -1,0 +1,127 @@
+2021-12-31 12:53:27,873 [INFO] com.sample.kafka.KafkaApplication {main} Starting KafkaApplication using Java 15.0.2 on yaambs18-Latitude-E7240 with PID 32884 (/home/yaambs18/Desktop/Spring Assignment/kafka/target/classes started by yaambs18 in /home/yaambs18/Desktop/Spring Assignment/kafka)
+2021-12-31 12:53:27,876 [DEBUG] com.sample.kafka.KafkaApplication {main} Running with Spring Boot v2.6.2, Spring v5.3.14
+2021-12-31 12:53:27,876 [INFO] com.sample.kafka.KafkaApplication {main} No active profile set, falling back to default profiles: default
+2021-12-31 12:53:28,665 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {main} Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-31 12:53:28,734 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {main} Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+2021-12-31 12:53:29,422 [INFO] org.hibernate.jpa.internal.util.LogHelper {main} HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-31 12:53:29,495 [INFO] org.hibernate.Version {main} HHH000412: Hibernate ORM core version 5.6.3.Final
+2021-12-31 12:53:29,738 [INFO] org.hibernate.annotations.common.Version {main} HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-31 12:53:29,862 [INFO] com.zaxxer.hikari.HikariDataSource {main} employee_data - Starting...
+2021-12-31 12:53:30,525 [INFO] com.zaxxer.hikari.HikariDataSource {main} employee_data - Start completed.
+2021-12-31 12:53:30,541 [INFO] org.hibernate.dialect.Dialect {main} HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-31 12:53:31,535 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator {main} HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-31 12:53:31,547 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {main} Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-31 12:53:32,136 [INFO] com.sample.kafka.KafkaConfig {main} Setting up Configuration for the kafka consumer
+2021-12-31 12:53:32,137 [INFO] com.sample.kafka.KafkaConfig {main} Successfully set up consumer configuration
+2021-12-31 12:53:32,597 [INFO] org.apache.kafka.clients.consumer.ConsumerConfig {main} ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group_1-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_1
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-12-31 12:53:32,898 [INFO] org.apache.kafka.common.utils.AppInfoParser {main} Kafka version: 3.0.0
+2021-12-31 12:53:32,899 [INFO] org.apache.kafka.common.utils.AppInfoParser {main} Kafka commitId: 8cb0a5e9d3441962
+2021-12-31 12:53:32,900 [INFO] org.apache.kafka.common.utils.AppInfoParser {main} Kafka startTimeMs: 1640935412896
+2021-12-31 12:53:32,908 [INFO] org.apache.kafka.clients.consumer.KafkaConsumer {main} [Consumer clientId=consumer-group_1-1, groupId=group_1] Subscribed to topic(s): KafkaTopic2
+2021-12-31 12:53:32,942 [INFO] com.sample.kafka.KafkaApplication {main} Started KafkaApplication in 5.885 seconds (JVM running for 6.696)
+2021-12-31 12:53:33,302 [INFO] org.apache.kafka.clients.Metadata {org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1} [Consumer clientId=consumer-group_1-1, groupId=group_1] Cluster ID: zhW7QWMPTtOJdH3gCQ_ukw
+2021-12-31 12:53:33,303 [INFO] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator {org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1} [Consumer clientId=consumer-group_1-1, groupId=group_1] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2021-12-31 12:53:33,306 [INFO] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator {org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1} [Consumer clientId=consumer-group_1-1, groupId=group_1] (Re-)joining group
+2021-12-31 12:53:33,340 [INFO] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator {org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1} [Consumer clientId=consumer-group_1-1, groupId=group_1] Request joining group due to: need to re-join with the given member-id
+2021-12-31 12:53:33,344 [INFO] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator {org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1} [Consumer clientId=consumer-group_1-1, groupId=group_1] (Re-)joining group
+2021-12-31 12:53:33,353 [INFO] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator {org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1} [Consumer clientId=consumer-group_1-1, groupId=group_1] Successfully joined group with generation Generation{generationId=52, memberId='consumer-group_1-1-ebf4b099-a770-4713-9655-2be4dd12f9d1', protocol='range'}
+2021-12-31 12:53:33,356 [INFO] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator {org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1} [Consumer clientId=consumer-group_1-1, groupId=group_1] Finished assignment for group at generation 52: {consumer-group_1-1-ebf4b099-a770-4713-9655-2be4dd12f9d1=Assignment(partitions=[KafkaTopic2-0])}
+2021-12-31 12:53:33,371 [INFO] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator {org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1} [Consumer clientId=consumer-group_1-1, groupId=group_1] Successfully synced group in generation Generation{generationId=52, memberId='consumer-group_1-1-ebf4b099-a770-4713-9655-2be4dd12f9d1', protocol='range'}
+2021-12-31 12:53:33,372 [INFO] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator {org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1} [Consumer clientId=consumer-group_1-1, groupId=group_1] Notifying assignor about the new Assignment(partitions=[KafkaTopic2-0])
+2021-12-31 12:53:33,375 [INFO] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator {org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1} [Consumer clientId=consumer-group_1-1, groupId=group_1] Adding newly assigned partitions: KafkaTopic2-0
+2021-12-31 12:53:33,393 [INFO] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator {org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1} [Consumer clientId=consumer-group_1-1, groupId=group_1] Setting offset for partition KafkaTopic2-0 to the committed offset FetchPosition{offset=14, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 0 rack: null)], epoch=0}}
+2021-12-31 12:53:33,395 [INFO] org.springframework.kafka.listener.KafkaMessageListenerContainer {org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1} group_1: partitions assigned: [KafkaTopic2-0]
+2021-12-31 12:55:18,217 [INFO] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator {org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1} [Consumer clientId=consumer-group_1-1, groupId=group_1] Revoke previously assigned partitions KafkaTopic2-0
+2021-12-31 12:55:18,218 [INFO] org.springframework.kafka.listener.KafkaMessageListenerContainer {org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1} group_1: partitions revoked: [KafkaTopic2-0]
+2021-12-31 12:55:18,219 [INFO] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator {org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1} [Consumer clientId=consumer-group_1-1, groupId=group_1] Member consumer-group_1-1-ebf4b099-a770-4713-9655-2be4dd12f9d1 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2021-12-31 12:55:18,220 [INFO] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator {org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1} [Consumer clientId=consumer-group_1-1, groupId=group_1] Resetting generation due to: consumer pro-actively leaving the group
+2021-12-31 12:55:18,221 [INFO] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator {org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1} [Consumer clientId=consumer-group_1-1, groupId=group_1] Request joining group due to: consumer pro-actively leaving the group
+2021-12-31 12:55:18,222 [INFO] org.apache.kafka.clients.consumer.KafkaConsumer {org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1} [Consumer clientId=consumer-group_1-1, groupId=group_1] Unsubscribed all topics or patterns and assigned partitions
+2021-12-31 12:55:18,222 [INFO] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator {org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1} [Consumer clientId=consumer-group_1-1, groupId=group_1] Resetting generation due to: consumer pro-actively leaving the group
+2021-12-31 12:55:18,223 [INFO] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator {org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1} [Consumer clientId=consumer-group_1-1, groupId=group_1] Request joining group due to: consumer pro-actively leaving the group
+2021-12-31 12:55:18,224 [INFO] org.apache.kafka.common.metrics.Metrics {org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1} Metrics scheduler closed
+2021-12-31 12:55:18,224 [INFO] org.apache.kafka.common.metrics.Metrics {org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1} Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2021-12-31 12:55:18,224 [INFO] org.apache.kafka.common.metrics.Metrics {org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1} Metrics reporters closed
+2021-12-31 12:55:18,230 [INFO] org.apache.kafka.common.utils.AppInfoParser {org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1} App info kafka.consumer for consumer-group_1-1 unregistered
+2021-12-31 12:55:18,230 [INFO] org.springframework.kafka.listener.KafkaMessageListenerContainer {org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1} group_1: Consumer stopped
+2021-12-31 12:55:18,233 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {SpringApplicationShutdownHook} Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-31 12:55:18,235 [INFO] com.zaxxer.hikari.HikariDataSource {SpringApplicationShutdownHook} employee_data - Shutdown initiated...
+2021-12-31 12:55:18,245 [INFO] com.zaxxer.hikari.HikariDataSource {SpringApplicationShutdownHook} employee_data - Shutdown completed.
